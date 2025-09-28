@@ -1,4 +1,6 @@
 import streamlit as st
+import os  # Add this import
+
 st.title("Test Narrative Analysis")
 st.write("App is running!")
 api_key = os.getenv("XAI_API_KEY") or st.secrets.get("XAI_API_KEY")
